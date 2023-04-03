@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My porto</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style3.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#certificate">Certificates</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#contact">Contact me</a></li>
+      </ul>
+      <img src="menu1.png" alt="" class="menu-btn" />
+    </nav>
+
+    <header>
+      <div class="hai">
+        <h1>Hi, I'm Alvin, a Web developer</h1>
+      </div>
+      <div class="box">
+        <img src="img1.png" alt="" />
+        <button>Hover me</button>
+      </div>
+    </header>
+
+    <main id="about">
+      <div class="kata1"><h1>About me</h1></div>
+
+      <div class="gabung">
+        <div class="sisi">
+          <p>
+            Hi, I'm Alvin Koeinata, a frontend developer. I graduated with a Bachelor's Degree focused on System Information from STMIK IBBI Medan. I specialize in creating dynamic and responsive user interfaces using HTML 5, CSS3 and
+            JavaScript . I am also interested in UI/UX Design. I could speak English both read and write.
+          </p>
+        </div>
+        <div class="sisi">
+          <p>
+            I am an enthusiastic and driven learner. I am looking to enhance my practical knowledge in information technology. Please get in touch if you're seeking for a frontend developer that is passionate about designing engaging and
+            intuitive user interfaces, or if you have an intriguing project you'd like to explore.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <aside id="certificate">
+      <div class="kat1"><h1>My certificates</h1></div>
+
+      <div class="gabung1">
+        <div class="s1">
+          <img src="images/g2.jpg" alt="" />
+          <h2>Basic Programming Class</h2>
+          <p>G2 Academy</p>
+        </div>
+        <div class="s1">
+          <img src="images/dicoding.jpg" alt="" />
+          <h2>Dasar Pemrograman Javascript</h2>
+          <p>Dicoding</p>
+        </div>
+        <div class="s1">
+          <img src="images/RWD.jpg" alt="" />
+          <h2>Responsive Web Design</h2>
+          <p>Freecodecamp</p>
+        </div>
+        <div class="s1">
+          <img src="images/dqlab.jpg" alt="" />
+          <h2>Introduction Data Science with R</h2>
+          <p>DQ Lab</p>
+        </div>
+        <div class="s1">
+          <img src="images/jwd.jpg" alt="" />
+          <h2>Pelatihan Junior Web Developer</h2>
+          <p>BPPTIK</p>
+        </div>
+        <div class="s1">
+          <img src="images/HTML.jpg" alt="" />
+          <h2>Kursus HTML, CSS</h2>
+          <p>Progate</p>
+        </div>
+        <div class="s1">
+          <img src="images/JS.jpg" alt="" />
+          <h2>Kursus Javascript</h2>
+          <p>Progate</p>
+        </div>
+        <div class="s1">
+          <img src="images/PHP.jpg" alt="" />
+          <h2>Kursus PHP</h2>
+          <p>Progate</p>
+        </div>
+        <div class="s1">
+          <img src="images/react.jpg" alt="" />
+          <h2>Kursus React</h2>
+          <p>Progate</p>
+        </div>
+      </div>
+    </aside>
+
+    <section id="project">
+      <div class="kat2"><h1>My projects</h1></div>
+
+      <div class="gabung2">
+        <div class="s2">
+          <a href="https://alvinkoeinata8.github.io/dibimbing1/"><img src="images/dibimbing.png" alt="" /></a>
+          <h1>Dibimbing landing page</h1>
+        </div>
+
+        <div class="s2">
+          <a href="https://alvinkoeinata8.github.io/netflix1"><img src="images/net.png" alt="" /></a>
+          <h1>Netflix landing page</h1>
+        </div>
+
+        <div class="s2">
+          <img src="images/3js.png" alt="" />
+          <h1>Three js</h1>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="gabung3">
+        <a href="https://www.instagram.com/alvin_koeinata/"><i class="fa-brands fa-instagram fa-3x"></i></a>
+        <a href="https://twitter.com/alvinkoeinata"><i class="fa-brands fa-twitter fa-3x"></i></a>
+        <a href="https://web.facebook.com/alvin.koeinata/"><i class="fa-brands fa-facebook fa-3x"></i></a>
+        <a href="https://www.linkedin.com/in/alvin-koeinata/"> <i class="fa-brands fa-linkedin fa-3x"></i></a>
+      </div>
+      <div class="copy">alvinkoeinata@gmail.com</div>
+    </footer>
+
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      const navlinks = document.querySelector(".nav-links");
+
+      menuBtn.addEventListener("click", () => {
+        navlinks.classList.toggle("mobile-menu");
+      });
+    </script>
+  </body>
+</html>

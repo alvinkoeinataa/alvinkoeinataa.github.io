@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li a {
+  color: white;
+  font-size: larger;
+  text-decoration: none;
+}
+
+/* ----------------------------Navbar---------------------------- */
+.navbar {
+  /* position: absolute; */
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  color: black;
+  background-color: #2d2d2d;
+  justify-content: flex-start;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 30px;
+}
+.nav-links li a {
+  font-weight: 600;
+}
+
+.menu-btn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 40px;
+  cursor: pointer;
+  display: none;
+}
+/* end navbar */
+.vid {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 35px;
+  text-align: center;
+}
+
+.bg {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  filter: brightness(30%);
+}
+
+/* -----------------------Header---------------------------- */
+header {
+  padding: 5% 12%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.hai {
+  width: 400px;
+  height: 230px;
+  padding: 7% 1%;
+  line-height: 65px;
+}
+
+.hai h1 {
+  color: black;
+  font-size: 50px;
+}
+
+.box button {
+  margin-top: 360px;
+  padding: 18px;
+  font-size: 20px;
+}
+
+/* ---------------------Main--------------------- */
+main {
+  background-color: #e9e9e9;
+  padding: 2% 10%;
+  text-align: center;
+}
+
+.kata1 {
+  padding: 5%;
+}
+
+.kata1 h1 {
+  font-size: 36px;
+}
+.gabung {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.sisi {
+  width: 500px;
+  height: 300px;
+  line-height: 32px;
+}
+
+.sisi p {
+  font-size: 22px;
+}
+
+/* Penutup Main */
+
+/* ---------------------aside--------------------- */
+aside {
+  padding: 5% 10%;
+  text-align: center;
+  background-color: #383f48;
+}
+
+.kat1 {
+  margin-bottom: 35px;
+}
+
+.kat1 h1 {
+  font-size: 36px;
+  color: white;
+}
+.gabung1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.s1 {
+  margin: 20px;
+  width: 350px;
+  height: 330px;
+  background-color: lightskyblue;
+  line-height: 32px;
+
+  border: 1px solid black;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+.s1 img {
+  width: 100%;
+}
+
+/* ---------------------section--------------------- */
+section {
+  text-align: center;
+  padding: 5% 10%;
+  background-color: white;
+}
+
+.kat2 {
+  margin-bottom: 30px;
+}
+.kat2 h1 {
+  font-size: 36px;
+}
+.gabung2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.s2 {
+  margin: 10px;
+  width: 350px;
+  height: 300px;
+}
+
+.s2 img {
+  width: 100%;
+}
+
+/* Penutup section */
+
+/* ---------------------Footer--------------------- */
+
+footer {
+  height: 210px;
+  background-color: #e9e9e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.gabung3 {
+  padding: 4% 1%;
+  width: 400px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gabung3 i {
+  margin: 10px;
+}
+
+.copy {
+  margin-top: 5px;
+  font-size: 20px;
+}
+@media only screen and (max-width: 800px) {
+  .navbar {
+    padding: 40px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: #2d2d2d;
+    margin-top: -900px;
+    transition: all 0.5s ease;
+  }
+
+  .nav-links li {
+    margin: 30px auto;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .vid {
+    font-size: 25px;
+  }
+
+  .sisi p {
+    font-size: 20px;
+  }
+  .hai h1 {
+    font-size: 40px;
+  }
+  .vid {
+    margin: -80px;
+    padding: 0;
+  }
+  .bg {
+    height: 80%;
+  }
+  .vid h1 {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 1055px) {
+  .saya {
+    margin: 0;
+  }
+  .hai {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .menu-btn {
+    display: block;
+  }
+  .navbar {
+    padding: 40px;
+  }
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: #2d2d2d;
+    margin-top: -900px;
+    transition: all 0.5s ease;
+  }
+
+  .mobile-menu {
+    margin-top: 0px;
+  }
+  .nav-links li {
+    margin: 30px auto;
+  }
+  #about p {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #about {
+    margin-top: 50px;
+  }
+}
